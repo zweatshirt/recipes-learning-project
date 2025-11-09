@@ -15,20 +15,26 @@ import { FormsModule } from '@angular/forms';
 export class RecipePage implements OnInit {
   recipeSubscription!: Subscription;
   recipe!: Recipe | null;
-  ingredients = this.recipe?.ingredients;
+  ingredients!: string[] | null;
 
   selectedIngredients: string[] = [];
 
   constructor(private recipesService: RecipesService) {}
 
   ngOnInit() {
+    this.recipe = this.recipesService.selectedRecipe;
+    this.ingredients = this.recipesService.selectedRecipe?.ingredients || null;
     this.recipeSubscription = this.recipesService.event$.subscribe((event) => {
-      this.recipe = event;
+      if (!event) {
+        return;
+      }
+      this.recipesService.setSelectedRecipe(event);
+      this.recipe = this.recipesService.selectedRecipe;
+      this.ingredients = this.recipesService.selectedRecipe?.ingredients || null;
     });
   }
 
   toggleIngredient(selectedIngredient: string, checked: boolean) {
-    console.log(this.selectedIngredients);
     if (checked) {
       this.selectedIngredients.push(selectedIngredient);
       return;
