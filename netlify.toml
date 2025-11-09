@@ -1,0 +1,13 @@
+[build]
+  # Build command
+  command = "npm run build"
+
+  # Directory with the static files (built Angular app)
+  publish = "dist/recipe-app/browser"
+
+# SPA fallback - redirect all routes to index.html
+# This allows Angular Router to handle all routes client-side
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
