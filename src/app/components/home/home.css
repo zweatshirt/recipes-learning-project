@@ -3,6 +3,7 @@
 }
 
 .list-section {
+  width: 800px;
   display: grid;
   grid-template-columns: 1fr;
   justify-self: center;
