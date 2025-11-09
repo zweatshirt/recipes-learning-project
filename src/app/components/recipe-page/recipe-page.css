@@ -1,0 +1,85 @@
+.recipe-page {
+  display: flex;
+  justify-content: center;
+}
+
+.page-content {
+  width: 600px;
+}
+
+.recipe-banner {
+  justify-content: center;
+}
+
+.recipe-banner > h1 {
+  margin-bottom: 8px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: lightgray;
+  margin: 16px 0;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+.ingredients-list {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  gap: 2px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.selected {
+  text-decoration: line-through;
+}
+.unselected {
+  text-decoration: none;
+}
+
+.orange-checkbox input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.orange-checkbox::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--color-accent);
+  vertical-align: middle;
+}
+
+.orange-checkbox.selected::before {
+  background-color: var(--color-accent);
+}
+
+.instructions-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.step-number {
+  color: white;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-size: 12px;
+}

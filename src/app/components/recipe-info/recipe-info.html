@@ -1,0 +1,14 @@
+<div *ngIf="recipe" class="row">
+  <div class="content row">
+    <i class="ph ph-clock icon"></i>
+    <span>{{ recipe.prepTimeMinutes }}</span>
+  </div>
+  <div class="content row">
+    <i class="ph ph-fire icon"></i>
+    <span>{{ recipe.caloriesPerServing }}</span>
+  </div>
+  <div class="content row">
+    <i class="ph ph-star icon"></i>
+    <span>{{ recipe.rating }} ({{ recipe.reviewCount }})</span>
+  </div>
+</div>

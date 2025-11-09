@@ -1,0 +1,28 @@
+.hero-bg {
+  background-color: lightgray;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  max-width: 600px;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4%;
+}

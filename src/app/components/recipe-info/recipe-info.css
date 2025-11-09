@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+.row.content {
+  gap: 2px;
+  align-items: center;
+}
+
+.icon {
+  color: var(--color-accent);
+}

@@ -1,0 +1,10 @@
+.home > * {
+  padding-block: 48px;
+}
+
+.list-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  gap: 20px;
+}

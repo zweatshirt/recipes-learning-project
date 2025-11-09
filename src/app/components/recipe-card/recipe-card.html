@@ -1,0 +1,7 @@
+<div type="button" (click)="goToRecipe()" class="card">
+  <img src="{{ recipe.image }}" class="recipe-image" />
+  <div class="card-info">
+    <span>{{ recipe.name }}</span>
+    <app-recipe-info [recipe]="recipe"></app-recipe-info>
+  </div>
+</div>

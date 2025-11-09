@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.nav-content {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-content h2 {
+  margin: 0;
+  color: var(--color-accent);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-accent);
+}

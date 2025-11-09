@@ -1,0 +1,40 @@
+<div class="recipe-page">
+  <div *ngIf="recipe" class="page-content">
+    <div class="recipe-banner">
+      <h1>
+        {{ recipe.name }}
+      </h1>
+      <app-recipe-info [recipe]="recipe"></app-recipe-info>
+    </div>
+    <div class="divider"></div>
+    <img class="recipe-image" src="{{ recipe.image }}" />
+    <div class="divider"></div>
+    <h2>Ingredients</h2>
+    <ul class="ingredients-list">
+      <li *ngFor="let ingredient of recipe.ingredients">
+        <label
+          class="orange-checkbox"
+          [ngClass]="{
+            selected: selectedIngredients.includes(ingredient),
+            unselected: !selectedIngredients.includes(ingredient)
+          }"
+        >
+          <input
+            type="checkbox"
+            name="ingredient"
+            [value]="ingredient"
+            (change)="toggleIngredient(ingredient, $event.target.checked)"
+          />
+          {{ ingredient }}
+        </label>
+      </li>
+    </ul>
+    <h2>Instructions</h2>
+    <ul class="instructions-list">
+      <li *ngFor="let step of recipe.instructions; let i = index">
+        <span class="step-number">{{ i + 1 }}</span> {{ step }}
+      </li>
+    </ul>
+    <div *ngIf="!recipe">No recipe found.</div>
+  </div>
+</div>
