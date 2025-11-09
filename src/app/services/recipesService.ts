@@ -22,6 +22,7 @@ export class RecipesService {
     if (this._selectedRecipe) {
       return this._selectedRecipe;
     }
+
     const recipe = localStorage.getItem('selectedRecipe');
     if (!recipe) {
       return null;
