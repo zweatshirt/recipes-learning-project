@@ -14,14 +14,12 @@
 
 @media (max-width: 640px) {
   .grid {
-    max-width: 414px;
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 414px) {
   .grid {
-    max-width: 220px;
     grid-template-columns: 1fr;
   }
 }

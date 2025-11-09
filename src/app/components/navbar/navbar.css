@@ -36,6 +36,7 @@
 
 @media (max-width: 414px) {
   .nav-content {
-    width: 220px;
+    width: 100%;
+    padding: 0 16px;
   }
 }
