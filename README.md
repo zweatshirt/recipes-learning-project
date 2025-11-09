@@ -1,5 +1,7 @@
 # RecipeApp
 
+## [Example deployment](https://eloquent-kangaroo-466948.netlify.app/)
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
 
 ## Development server
