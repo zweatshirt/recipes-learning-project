@@ -1,16 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { RecipesService } from '../../services/recipesService';
-import { OnInit } from '@angular/core';
 import { Recipe } from '../recipe-list/recipe-list';
-import { NgIf, NgFor, CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { RecipeInfo } from '../recipe-info/recipe-info';
-import { Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-recipe-page',
-  imports: [NgIf, NgFor, RecipeInfo, FormsModule, CommonModule],
+  imports: [CommonModule, RecipeInfo, FormsModule],
   templateUrl: './recipe-page.html',
   styleUrl: './recipe-page.css',
 })

@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { Recipe } from '../components/recipe-list/recipe-list';
 import { map } from 'rxjs/operators';
-import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
