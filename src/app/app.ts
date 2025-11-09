@@ -8,7 +8,7 @@ import { Navbar } from './components/navbar/navbar';
 import { RecipePage } from './components/recipe-page/recipe-page';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, RecipePage],
+  imports: [RouterOutlet, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
