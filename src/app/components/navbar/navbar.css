@@ -21,3 +21,21 @@
   text-decoration: none;
   color: var(--color-accent);
 }
+
+@media (max-width: 900px) {
+  .nav-content {
+    width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-content {
+    width: 414px;
+  }
+}
+
+@media (max-width: 414px) {
+  .nav-content {
+    width: 220px;
+  }
+}

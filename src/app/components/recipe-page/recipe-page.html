@@ -11,7 +11,7 @@
     <div class="divider"></div>
     <h2>Ingredients</h2>
     <ul class="ingredients-list">
-      <li *ngFor="let ingredient of recipe.ingredients">
+      <li class="ingredient-item" *ngFor="let ingredient of recipe.ingredients">
         <label
           class="orange-checkbox"
           [ngClass]="{
