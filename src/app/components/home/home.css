@@ -3,27 +3,8 @@
 }
 
 .list-section {
-  width: 800px;
   display: grid;
   grid-template-columns: 1fr;
   justify-self: center;
   gap: 20px;
-}
-
-@media (max-width: 900px) {
-  .list-section {
-    width: 600px;
-  }
-}
-
-@media (max-width: 640px) {
-  .list-section {
-    width: 414px;
-  }
-}
-
-@media (max-width: 414px) {
-  .list-section {
-    width: 220px;
-  }
 }

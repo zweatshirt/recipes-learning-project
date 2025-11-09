@@ -11,7 +11,6 @@
 
 .hero-content {
   display: flex;
-  max-width: 800px;
   gap: 40px;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +33,6 @@
 
 @media (max-width: 900px) {
   .hero-content {
-    max-width: 600px;
     gap: 24px;
   }
 
@@ -50,10 +48,8 @@
 
 @media (max-width: 640px) {
   .hero-content {
-    max-width: 414px;
     flex-direction: column;
     gap: 16px;
-    padding: 0 16px;
   }
 
   .hero-text {
@@ -75,11 +71,6 @@
 }
 
 @media (max-width: 414px) {
-  .hero-content {
-    max-width: 220px;
-    padding: 0;
-  }
-
   .hero-img {
     width: 210px;
     height: 210px;

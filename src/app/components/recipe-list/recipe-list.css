@@ -1,24 +1,11 @@
 .grid {
-  max-width: 800px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 16px;
   column-gap: 8px;
 }
 
-@media (max-width: 900px) {
-  .grid {
-    max-width: 600px;
-  }
-}
-
 @media (max-width: 640px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 414px) {
   .grid {
     grid-template-columns: 1fr;
   }

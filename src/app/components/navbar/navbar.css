@@ -6,7 +6,6 @@
 }
 
 .nav-content {
-  width: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,23 +19,4 @@
 .link {
   text-decoration: none;
   color: var(--color-accent);
-}
-
-@media (max-width: 900px) {
-  .nav-content {
-    width: 600px;
-  }
-}
-
-@media (max-width: 640px) {
-  .nav-content {
-    width: 414px;
-  }
-}
-
-@media (max-width: 414px) {
-  .nav-content {
-    width: 100%;
-    padding: 0 16px;
-  }
 }

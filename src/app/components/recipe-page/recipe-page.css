@@ -3,10 +3,6 @@
   justify-content: center;
 }
 
-.page-content {
-  width: 800px;
-}
-
 .recipe-banner {
   justify-content: center;
 }
@@ -96,24 +92,8 @@
   font-size: 12px;
 }
 
-@media (max-width: 900px) {
-  .page-content {
-    width: 600px;
-  }
-}
-
 @media (max-width: 640px) {
-  .page-content {
-    width: 414px;
-  }
   .ingredients-list {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 414px) {
-  .page-content {
-    width: 400px;
-    padding: 12px;
   }
 }
